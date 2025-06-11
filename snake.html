@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="info">
+    <span>Score: <span id="score">0</span></span>
+    <span>Time: <span id="timer">0</span> sec</span>
+  </div>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <!-- Start Popup -->
+  <div class="popup" id="startPopup">
+    <div class="popup-content">
+      <h2>Snake Game</h2>
+      <button onclick="startGame()">Play</button>
+    </div>
+  </div>
+
+  <!-- Game Over Popup -->
+  <div class="popup" id="gameOverPopup">
+    <div class="popup-content">
+      <h2>Game Over!</h2>
+      <p>Your Score: <span id="finalScore"></span></p>
+      <p>Time: <span id="finalTime"></span> sec</p>
+      <button onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
